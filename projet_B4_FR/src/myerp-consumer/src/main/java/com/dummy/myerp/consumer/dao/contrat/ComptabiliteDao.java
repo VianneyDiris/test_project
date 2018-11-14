@@ -5,6 +5,7 @@ import java.util.List;
 import com.dummy.myerp.model.bean.comptabilite.CompteComptable;
 import com.dummy.myerp.model.bean.comptabilite.EcritureComptable;
 import com.dummy.myerp.model.bean.comptabilite.JournalComptable;
+import com.dummy.myerp.model.bean.comptabilite.SequenceEcritureComptable;
 import com.dummy.myerp.technical.exception.NotFoundException;
 
 
@@ -34,6 +35,12 @@ public interface ComptabiliteDao {
      * @return {@link List}
      */
     List<EcritureComptable> getListEcritureComptable();
+
+    /**
+     * Renvoie la liste des SequenceEcritureComptable
+     * @return {@link List}
+     */
+    List<SequenceEcritureComptable> getListSequenceEcritureComptable();
 
     /**
      * Renvoie l'Écriture Comptable d'id {@code pId}.
@@ -80,4 +87,6 @@ public interface ComptabiliteDao {
      * @param pId l'id de l'écriture
      */
     void deleteEcritureComptable(Integer pId);
+
+
 }
