@@ -82,6 +82,20 @@ public interface ComptabiliteDao {
     void updateEcritureComptable(EcritureComptable pEcritureComptable);
 
     /**
+     * Insert une nouvelle écriture comptable.
+     *
+     * @param sequence -
+     */
+    void insertSequenceEcritureComptable(SequenceEcritureComptable sequence);
+
+    /**
+     * Met à jour l'écriture comptable.
+     *
+     * @param sequence -
+     */
+    void updateSequenceEcritureComptable(SequenceEcritureComptable sequence);
+
+    /**
      * Supprime l'écriture comptable d'id {@code pId}.
      *
      * @param pId l'id de l'écriture
