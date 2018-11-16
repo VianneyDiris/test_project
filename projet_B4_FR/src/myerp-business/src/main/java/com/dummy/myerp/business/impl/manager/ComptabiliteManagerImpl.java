@@ -92,13 +92,18 @@ public class ComptabiliteManagerImpl extends AbstractBusinessManager implements 
         String reference = pEcritureComptable.getJournal().getCode()+"-"+annee+"/";
         if(derniereValeur>9){
             reference +="000"+derniereValeur;
-            pEcritureComptable.setReference(reference);
         }
         else {
             reference +="0000"+derniereValeur;
-            pEcritureComptable.setReference(reference);
         }
-        getDaoProxy().getComptabiliteDao().updateEcritureComptable(pEcritureComptable);
+        pEcritureComptable.setReference(reference);
+
+        try{
+        this.updateEcritureComptable(pEcritureComptable);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
 
         /*
                 4.  Enregistrer (insert/update) la valeur de la séquence en persitance
@@ -171,8 +176,21 @@ public class ComptabiliteManagerImpl extends AbstractBusinessManager implements 
                 "L'écriture comptable doit avoir au moins deux lignes : une ligne au débit et une ligne au crédit.");
         }
 
-        // TODO ===== RG_Compta_5 : Format et contenu de la référence
         // vérifier que l'année dans la référence correspond bien à la date de l'écriture, idem pour le code journal...
+        String[] parts = pEcritureComptable.getReference().split("-");
+        String codeJournal = parts[0];
+
+        String[] parts2 = parts[1].split("/");
+        String date = parts2[0];
+
+        if(!codeJournal.equals(pEcritureComptable.getJournal().getCode())) throw new FunctionalException("Le code journal de la référence est différent du code journal.");
+
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(pEcritureComptable.getDate());
+        int year = cal.get(Calendar.YEAR);
+        String annee = String.valueOf(year);
+
+        if(!date.equals(annee)) throw new FunctionalException("L'année de la référence est différente de l'année d'écriture.");
     }
 
 
