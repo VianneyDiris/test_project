@@ -1,9 +1,20 @@
 language: java
-jdk: oraclejdk8
 
-install: true
-script: ./mvnw clean install
+jdk:
+  - oraclejdk8
 
-cache:
-  directories:
-  - $HOME/.m2
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - cd docker/dev
+  - docker-compose up -d
+  - docker ps -a
+
+before_script:
+  - cd ../../src
+
+script:
+  - mvn test
