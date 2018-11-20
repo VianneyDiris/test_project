@@ -12,7 +12,7 @@
         <property name="targetMethod" value="configure"/>
         <property name="arguments">
             <map>
-                <entry value-ref="dataSource">
+                <entry value-ref="dataSourceMYERP">
                     <key>
                         <value type="com.dummy.myerp.consumer.db.DataSourcesEnum">MYERP</value>
                     </key>
