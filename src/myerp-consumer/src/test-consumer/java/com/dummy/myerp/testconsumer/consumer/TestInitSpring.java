@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * Classe de test de l'initialisation du contexte Spring
  */
-class TestInitSpring extends ConsumerTestCase {
+public class TestInitSpring extends ConsumerTestCase {
 
     /**
      * Constructeur.

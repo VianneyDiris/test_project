@@ -5,10 +5,13 @@ import com.dummy.myerp.model.bean.comptabilite.EcritureComptable;
 import com.dummy.myerp.model.bean.comptabilite.JournalComptable;
 import com.dummy.myerp.model.bean.comptabilite.LigneEcritureComptable;
 import com.dummy.myerp.technical.exception.FunctionalException;
+import com.dummy.myerp.technical.exception.NotFoundException;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
 import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
@@ -96,7 +99,7 @@ public class ComptabiliteManagerImplTest {
 
     @Test
     public void addReference(){
-        /*EcritureComptable vEcritureComptable = new EcritureComptable();
+       /* EcritureComptable vEcritureComptable = new EcritureComptable();
         vEcritureComptable.setId(-1);
         vEcritureComptable.setJournal(new JournalComptable("AC", "Achat"));
         try{
@@ -120,12 +123,12 @@ public class ComptabiliteManagerImplTest {
 
 
 
-        assertThrows(NotFoundException.class, () -> {
+        Assertions.assertThrows(NotFoundException.class, () -> {
             vEcritureComptable.setDate(new Date());
             manager.addReference(vEcritureComptable);
-        });*/
+        });
 
-//        manager.getListJournalComptable();
+//        manager.getListJournalComptable();*/
     }
 
 }

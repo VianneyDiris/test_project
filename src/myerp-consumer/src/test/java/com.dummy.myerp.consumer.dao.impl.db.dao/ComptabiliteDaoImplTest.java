@@ -1,17 +1,32 @@
 package com.dummy.myerp.consumer.dao.impl.db.dao;
 
-import com.dummy.myerp.model.bean.comptabilite.CompteComptable;
-import com.dummy.myerp.model.bean.comptabilite.EcritureComptable;
-import com.dummy.myerp.model.bean.comptabilite.JournalComptable;
+import com.dummy.myerp.model.bean.comptabilite.*;
 import com.dummy.myerp.technical.exception.NotFoundException;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
+
+import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Date;
 import java.util.List;
 
 public class ComptabiliteDaoImplTest {
 
     private ComptabiliteDaoImpl dao = new ComptabiliteDaoImpl();
+
+
+    // ==================== CompteComptable - GET ====================
+
+    @Test
+    public void getListCompteComptable() {
+        List<CompteComptable> vList = dao.getListCompteComptable();
+        Assert.assertEquals(7, vList.size());
+    }
+
 
     // ==================== JournalComptable - GET ====================
 
@@ -29,12 +44,106 @@ public class ComptabiliteDaoImplTest {
         List<EcritureComptable> vList = dao.getListEcritureComptable();
         Assert.assertEquals(5, vList.size());
     }
-/*
+
     @Test
-    void getEcritureComptable() throws NotFoundException {
+    public void getEcritureComptable() throws NotFoundException {
         EcritureComptable vEcritureComptable = dao.getEcritureComptable(-3);
         Assert.assertEquals("BQ-2016/00003", vEcritureComptable.getReference());
 
-        Assert.assertThrows(NotFoundException.class, () -> dao.getEcritureComptable(0));
-    }*/
+        Assertions.assertThrows(NotFoundException.class, () -> dao.getEcritureComptable(0));
+    }
+
+    @Test
+    public void getEcritureComptableByRef() throws NotFoundException {
+        EcritureComptable vEcritureComptable = dao.getEcritureComptableByRef("BQ-2016/00003");
+        Assert.assertEquals("BQ", vEcritureComptable.getJournal().getCode());
+        String vEcritureYear = new SimpleDateFormat("yyyy").format(vEcritureComptable.getDate());
+        Assert.assertEquals("2016", vEcritureYear);
+        Assert.assertEquals(-3, vEcritureComptable.getId().intValue());
+
+        Assertions.assertThrows(NotFoundException.class, ()-> dao.getEcritureComptableByRef("BQ-2016/33333"));
+    }
+
+    @Test
+    public void loadListLigneEcriture() {
+        EcritureComptable ecriture  = new EcritureComptable();
+        ecriture.setId(-5);
+        dao.loadListLigneEcriture(ecriture);
+        Assert.assertEquals(2, ecriture.getListLigneEcriture().size());
+    }
+
+
+    // ==================== EcritureComptable - INSERT ====================
+
+    @Test
+    public void insertEcritureComptable() throws NotFoundException {
+        EcritureComptable ecriture  = new EcritureComptable();
+        ecriture.setId(-6);
+        Date currentDate = new Date();
+        Integer currentYear = LocalDateTime.ofInstant(currentDate.toInstant(), ZoneId.systemDefault()).toLocalDate().getYear();
+        ecriture.setJournal(new JournalComptable("OD", "Opérations Diverses"));
+        ecriture.setReference("OD-" + currentYear + "/00200");
+        ecriture.setDate(currentDate);
+        ecriture.setLibelle("Sandwichs");
+
+        ecriture.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(606),"Club saumon", new BigDecimal(10),null));
+        ecriture.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(4456),"TVA 20%", new BigDecimal(2),null));
+        ecriture.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(401),"Facture S110001", null,new BigDecimal(12)));
+
+        dao.insertEcritureComptable(ecriture);
+
+        Assert.assertTrue(ecriture.equals(dao.getEcritureComptable(-6)));
+    }
+
+
+    // ==================== EcritureComptable - UPDATE ====================
+
+    @Test
+    public void updateEcritureComptable() throws NotFoundException{
+        EcritureComptable ecriture = dao.getEcritureComptable(-6);
+        ecriture.setLibelle("panini");
+
+        dao.updateEcritureComptable(ecriture);
+
+        Assert.assertTrue(ecriture.getLibelle().equals(dao.getEcritureComptable(-6).getLibelle()));
+    }
+
+
+    // ==================== EcritureComptable - DELETE ====================
+
+    @Test(expected = NotFoundException.class)
+    public void deleteEcritureComptable() {
+        dao.deleteEcritureComptable(-6);
+
+    }
+
+
+    // ==================== SequenceEcritureComptable - GET ====================
+
+    @Test
+    public void getListSequenceEcritureComptable(){
+        List<SequenceEcritureComptable> vList = dao.getListSequenceEcritureComptable();
+        Assert.assertEquals(4, vList.size());
+    }
+
+    // ==================== SequenceEcritureComptable - INSERT ====================
+
+    @Test
+    public void insertSequenceEcritureComptable(){
+        SequenceEcritureComptable sequence = new SequenceEcritureComptable();
+        sequence.setCodeJournal("AC");
+        sequence.setAnnee(2018);
+        sequence.setDerniereValeur(5);
+
+        dao.insertSequenceEcritureComptable(sequence);
+        List<SequenceEcritureComptable> vList = dao.getListSequenceEcritureComptable();
+        Assert.assertEquals(5, vList.size());
+
+    }
+
+    // ==================== SequenceEcritureComptable - UPDATE ====================
+
+    // ==================== SequenceEcritureComptable - DELETE ====================
+
+
 }
