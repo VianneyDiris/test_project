@@ -1,7 +1,9 @@
 package com.dummy.myerp.consumer.dao.impl.db.dao;
 
+import com.dummy.myerp.consumer.dao.contrat.ComptabiliteDao;
 import com.dummy.myerp.model.bean.comptabilite.*;
 import com.dummy.myerp.technical.exception.NotFoundException;
+import com.dummy.myerp.testconsumer.consumer.ConsumerTestCase;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
@@ -14,9 +16,10 @@ import java.time.ZoneId;
 import java.util.Date;
 import java.util.List;
 
-public class ComptabiliteDaoImplTest {
+public class ComptabiliteDaoImplTest extends ConsumerTestCase {
 
-    private ComptabiliteDaoImpl dao = new ComptabiliteDaoImpl();
+    private ComptabiliteDao dao = getDaoProxy().getComptabiliteDao();
+
 
 
     // ==================== CompteComptable - GET ====================
