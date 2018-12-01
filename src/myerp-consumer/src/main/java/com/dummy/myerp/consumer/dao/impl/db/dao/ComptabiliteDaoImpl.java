@@ -92,8 +92,8 @@ public class ComptabiliteDaoImpl extends AbstractDbConsumer implements Comptabil
     @Override
     public List<SequenceEcritureComptable> getListSequenceEcritureComptable() {
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(this.getDataSource(DataSourcesEnum.MYERP));
-        SequenceEcritureComptableRM sequence = new SequenceEcritureComptableRM();
-        List<SequenceEcritureComptable> list = vJdbcTemplate.query(SQLgetListJournalComptable, sequence);
+        SequenceEcritureComptableRM sequenceRM = new SequenceEcritureComptableRM();
+        List<SequenceEcritureComptable> list = vJdbcTemplate.query(SQLloadListSequenceEcriture, sequenceRM);
         return list;
     }
 
@@ -174,6 +174,7 @@ public class ComptabiliteDaoImpl extends AbstractDbConsumer implements Comptabil
         vSqlParams.addValue("date", pEcritureComptable.getDate(), Types.DATE);
         vSqlParams.addValue("libelle", pEcritureComptable.getLibelle());
 
+        System.out.println(SQLinsertEcritureComptable);
         vJdbcTemplate.update(SQLinsertEcritureComptable, vSqlParams);
 
         // ----- Récupération de l'id
@@ -242,7 +243,7 @@ public class ComptabiliteDaoImpl extends AbstractDbConsumer implements Comptabil
     /** SQLinsertSequenceEcritureComptable */
     private static String SQLinsertSequenceEcritureComptable;
     public void setSQLinsertSequenceEcritureComptable(String pSQLinsertSequenceEcritureComptable) {
-        SQLinsertSequenceEcritureComptable = pSQLinsertSequenceEcritureComptable;
+        this.SQLinsertSequenceEcritureComptable = pSQLinsertSequenceEcritureComptable;
     }
     /**
      * Insert une nouvelle écriture comptable.
@@ -258,7 +259,6 @@ public class ComptabiliteDaoImpl extends AbstractDbConsumer implements Comptabil
         vSqlParams.addValue("derniere_valeur", sequence.getDerniereValeur());
 
         vJdbcTemplate.update(SQLinsertSequenceEcritureComptable, vSqlParams);
-
     }
 
     /** SQLupdateSequenceEcritureComptable */
