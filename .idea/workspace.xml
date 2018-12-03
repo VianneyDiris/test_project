@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd21efbd-d769-44d2-987f-57de8faf90fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/CompteComptableRMTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/JournalComptableRMTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/SequenceEcritureComptableRMTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/SequenceEcritureComptableRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/SequenceEcritureComptableRM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/RowMapperTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/myerp-technical/target/" />
     <ignored path="$PROJECT_DIR$/src/myerp-consumer/target/" />
@@ -55,7 +48,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="45" />
+          <entry key="java" value="50" />
           <entry key="properties" value="10" />
           <entry key="xml" value="25" />
           <entry key="yml" value="1" />
@@ -63,7 +56,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="45" />
+          <entry key="JAVA" value="50" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="10" />
           <entry key="XML" value="25" />
@@ -73,7 +66,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="12" />
-          <entry key="java" value="1978" />
+          <entry key="java" value="2225" />
           <entry key="properties" value="26" />
           <entry key="xml" value="219" />
           <entry key="yml" value="49" />
@@ -81,7 +74,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1977" />
+          <entry key="JAVA" value="2224" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="Properties" value="26" />
           <entry key="SQL" value="1" />
@@ -96,41 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-805">
-              <caret line="82" column="44" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/CompteComptableRM.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/CompteComptableRMTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/JournalComptableRMTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="873">
+              <caret line="136" column="115" selection-start-line="136" selection-start-column="115" selection-end-line="136" selection-end-column="115" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,10 +99,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/SequenceEcritureComptableRMTest.java">
+        <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="42" column="80" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
+            <state relative-caret-position="140">
+              <caret line="175" column="8" selection-start-line="175" selection-start-column="8" selection-end-line="175" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,14 +154,14 @@
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/main/resources/com/dummy/myerp/consumer/sqlContext.xml" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/contrat/ComptabiliteDao.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/RowMapperTest.java" />
-        <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java" />
-        <option value="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImpl.java" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/test.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/SequenceEcritureComptableRM.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/JournalComptableRMTest.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/CompteComptableRMTest.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/SequenceEcritureComptableRMTest.java" />
+        <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -317,7 +277,32 @@
               <item name="consumer" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
@@ -369,7 +354,16 @@
               <item name="myerp-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
@@ -378,7 +372,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -391,7 +384,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543868955164" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543878932838" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
@@ -421,7 +414,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SequenceEcritureComptableRMTest">
+  <component name="RunManager" selected="JUnit.ComptabiliteDaoImplTest">
     <configuration name="ComptabiliteDaoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-consumer" />
       <extension name="coverage">
@@ -436,7 +429,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComptabiliteDaoImplTest.insertEcritureComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComptabiliteDaoImplTest.updateEcritureComptableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-consumer" />
       <extension name="coverage">
         <pattern>
@@ -446,22 +439,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
       <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
-      <option name="METHOD_NAME" value="insertEcritureComptable" />
+      <option name="METHOD_NAME" value="updateEcritureComptableTest" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CompteComptableRMTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myerp-consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.consumer.dao.impl.db.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.CompteComptableRMTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -494,20 +473,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="consumer in myerp-consumer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myerp-consumer" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/testconsumer/consumer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.ComptabiliteDaoImplTest" />
-      <item itemvalue="JUnit.ComptabiliteDaoImplTest.insertEcritureComptable" />
-      <item itemvalue="JUnit.CompteComptableRMTest" />
       <item itemvalue="JUnit.JournalComptableRMTest" />
       <item itemvalue="JUnit.SequenceEcritureComptableRMTest" />
+      <item itemvalue="JUnit.consumer in myerp-consumer" />
+      <item itemvalue="JUnit.ComptabiliteDaoImplTest" />
+      <item itemvalue="JUnit.ComptabiliteDaoImplTest.updateEcritureComptableTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ComptabiliteDaoImplTest" />
+        <item itemvalue="JUnit.ComptabiliteDaoImplTest.updateEcritureComptableTest" />
+        <item itemvalue="JUnit.consumer in myerp-consumer" />
         <item itemvalue="JUnit.SequenceEcritureComptableRMTest" />
         <item itemvalue="JUnit.JournalComptableRMTest" />
-        <item itemvalue="JUnit.CompteComptableRMTest" />
-        <item itemvalue="JUnit.ComptabiliteDaoImplTest.insertEcritureComptable" />
-        <item itemvalue="JUnit.ComptabiliteDaoImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -528,50 +515,50 @@
       <workItem from="1543267955318" duration="1485000" />
       <workItem from="1543441995356" duration="4634000" />
       <workItem from="1543446639232" duration="14898000" />
-      <workItem from="1543695599058" duration="21998000" />
+      <workItem from="1543695599058" duration="28021000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ComptabiliteDaoImplTest - 2018.12.03 at 19h 38m 48s.xml">
-      <configuration name="ComptabiliteDaoImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ComptabiliteDaoImplTest - 2018.12.03 at 19h 44m 03s.xml">
-      <configuration name="ComptabiliteDaoImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ComptabiliteDaoImplTest_insertEcritureComptable - 2018.12.03 at 19h 44m 39s.xml">
-      <configuration name="ComptabiliteDaoImplTest.insertEcritureComptable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ComptabiliteDaoImplTest_insertEcritureComptable - 2018.12.03 at 19h 47m 38s.xml">
-      <configuration name="ComptabiliteDaoImplTest.insertEcritureComptable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ComptabiliteDaoImplTest_insertEcritureComptable - 2018.12.03 at 20h 06m 30s.xml">
-      <configuration name="ComptabiliteDaoImplTest.insertEcritureComptable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ComptabiliteDaoImplTest_insertEcritureComptable - 2018.12.03 at 20h 13m 00s.xml">
-      <configuration name="ComptabiliteDaoImplTest.insertEcritureComptable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ComptabiliteDaoImplTest_insertEcritureComptable - 2018.12.03 at 20h 14m 17s.xml">
-      <configuration name="ComptabiliteDaoImplTest.insertEcritureComptable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompteComptableRMTest - 2018.12.03 at 20h 42m 51s.xml">
-      <configuration name="CompteComptableRMTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JournalComptableRMTest - 2018.12.03 at 20h 52m 00s.xml">
       <configuration name="JournalComptableRMTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SequenceEcritureComptableRMTest - 2018.12.03 at 21h 08m 10s.xml">
       <configuration name="SequenceEcritureComptableRMTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="consumer_in_myerp-consumer - 2018.12.03 at 22h 33m 14s.xml">
+      <configuration name="consumer in myerp-consumer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComptabiliteDaoImplTest - 2018.12.03 at 23h 44m 00s.xml">
+      <configuration name="ComptabiliteDaoImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComptabiliteDaoImplTest - 2018.12.03 at 23h 46m 40s.xml">
+      <configuration name="ComptabiliteDaoImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComptabiliteDaoImplTest - 2018.12.03 at 23h 48m 44s.xml">
+      <configuration name="ComptabiliteDaoImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComptabiliteDaoImplTest - 2018.12.04 at 00h 02m 14s.xml">
+      <configuration name="ComptabiliteDaoImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComptabiliteDaoImplTest - 2018.12.04 at 00h 04m 28s.xml">
+      <configuration name="ComptabiliteDaoImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComptabiliteDaoImplTest - 2018.12.04 at 00h 04m 41s.xml">
+      <configuration name="ComptabiliteDaoImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComptabiliteDaoImplTest_updateEcritureComptableTest - 2018.12.04 at 00h 11m 05s.xml">
+      <configuration name="ComptabiliteDaoImplTest.updateEcritureComptableTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46158000" />
+    <option name="totallyTimeSpent" value="52181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4982079" visible="true" weight="0.26332623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4982079" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="1" sideWeight="0.50179213" side_tool="true" weight="0.26332623" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -580,7 +567,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26819128" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26819128" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3960499" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -809,16 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4672">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -846,27 +823,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-805">
-          <caret line="82" column="44" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/CompteComptableRM.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/EcritureComptableRM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -877,27 +837,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/LigneEcritureComptableRM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="20" column="67" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/SequenceEcritureComptableRM.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/JournalComptableRMTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,10 +854,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/cache/JournalComptableDaoCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/SequenceEcritureComptableRMTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
           <caret line="42" column="80" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/JournalComptableRMTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/EcritureComptableRM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/LigneEcritureComptableRM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="20" column="67" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="873">
+          <caret line="136" column="115" selection-start-line="136" selection-start-column="115" selection-end-line="136" selection-end-column="115" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="175" column="8" selection-start-line="175" selection-start-column="8" selection-end-line="175" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -25,40 +25,39 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
     // ==================== CompteComptable - GET ====================
 
     @Test
-    public void getListCompteComptable() {
+    public void getListCompteComptableTest() {
         List<CompteComptable> vList = dao.getListCompteComptable();
-        Assert.assertEquals(7, vList.size());
+        Assert.assertTrue(vList.size()>1);
     }
 
 
     // ==================== JournalComptable - GET ====================
 
     @Test
-    public void getListJournalComptable() {
+    public void getListJournalComptableTest() {
         List<JournalComptable> vList = dao.getListJournalComptable();
-        Assert.assertEquals(4, vList.size());
+        Assert.assertTrue(vList.size()>1);
     }
 
     // ==================== SequenceEcritureComptable - GET ====================
 
     @Test
-    public void getListSequenceEcritureComptable(){
+    public void getListSequenceEcritureComptableTest(){
         List<SequenceEcritureComptable> vList = dao.getListSequenceEcritureComptable();
-        System.out.println(vList.size());
-        Assert.assertEquals(5, vList.size());
+        Assert.assertTrue(vList.size()>1);
     }
 
 
     // ==================== EcritureComptable - GET ====================
 
     @Test
-    public void getListEcritureComptable() {
+    public void getListEcritureComptableTest() {
         List<EcritureComptable> vList = dao.getListEcritureComptable();
-        Assert.assertEquals(5, vList.size());
+        Assert.assertTrue(vList.size()>1);
     }
 
     @Test
-    public void getEcritureComptable() throws NotFoundException {
+    public void getEcritureComptableTest() throws NotFoundException {
         EcritureComptable vEcritureComptable = dao.getEcritureComptable(-3);
         Assert.assertEquals("BQ-2016/00003", vEcritureComptable.getReference());
 
@@ -66,7 +65,7 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
     }
 
     @Test
-    public void getEcritureComptableByRef() throws NotFoundException {
+    public void getEcritureComptableByRefTest() throws NotFoundException {
         EcritureComptable vEcritureComptable = dao.getEcritureComptableByRef("BQ-2016/00003");
         Assert.assertEquals("BQ", vEcritureComptable.getJournal().getCode());
         String vEcritureYear = new SimpleDateFormat("yyyy").format(vEcritureComptable.getDate());
@@ -77,7 +76,7 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
     }
 
     @Test
-    public void loadListLigneEcriture() {
+    public void loadListLigneEcritureTest() {
         EcritureComptable ecriture  = new EcritureComptable();
         ecriture.setId(-5);
         dao.loadListLigneEcriture(ecriture);
@@ -88,12 +87,11 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
     // ==================== EcritureComptable - INSERT ====================
 
     @Test
-    public void insertEcritureComptable() throws NotFoundException {
+    public void insertEcritureComptableTest() throws NotFoundException {
         EcritureComptable ecriture  = new EcritureComptable();
-       // ecriture.setId(-6);
         Date currentDate = new Date();
         Integer currentYear = LocalDateTime.ofInstant(currentDate.toInstant(), ZoneId.systemDefault()).toLocalDate().getYear();
-        ecriture.setJournal(new JournalComptable("OD", "Opérations Diverses"));;
+        ecriture.setJournal(new JournalComptable("OD", "Opérations Diverses"));
         ecriture.setReference("AC-" + currentYear + "/00200");
         ecriture.setDate(currentDate);
         ecriture.setLibelle("Sandwichs");
@@ -116,20 +114,35 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
     // ==================== EcritureComptable - UPDATE ====================
 
     @Test
-    public void updateEcritureComptable() throws NotFoundException{
-/*        EcritureComptable ecriture = dao.getEcritureComptable(-6);
-        ecriture.setLibelle("panini");
+    public void updateEcritureComptableTest() throws NotFoundException{
+        EcritureComptable ecriture  = new EcritureComptable();
+        Date currentDate = new Date();
+        Integer currentYear = LocalDateTime.ofInstant(currentDate.toInstant(), ZoneId.systemDefault()).toLocalDate().getYear();
+        ecriture.setJournal(new JournalComptable("OD", "Opérations Diverses"));
+        ecriture.setReference("AC-" + currentYear + "/00200");
+        ecriture.setDate(currentDate);
+        ecriture.setLibelle("Sandwichs");
 
-        dao.updateEcritureComptable(ecriture);
+        ecriture.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(606),"Club saumon", new BigDecimal(10),null));
+        ecriture.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(4456),"TVA 20%", new BigDecimal(2),null));
+        ecriture.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(401),"Facture S110001", null,new BigDecimal(12)));
 
-        Assert.assertTrue(ecriture.getLibelle().equals(dao.getEcritureComptable(-6).getLibelle()));*/
+        dao.insertEcritureComptable(ecriture);
+        EcritureComptable ecritureBis = dao.getEcritureComptableByRef("AC-" + currentYear + "/00200");
+
+        ecritureBis.setLibelle("panini");
+
+        dao.updateEcritureComptable(ecritureBis);
+
+        Assert.assertTrue(dao.getEcritureComptableByRef("AC-" + currentYear + "/00200").getLibelle().equals("panini"));
+        dao.deleteEcritureComptable(ecritureBis.getId());
     }
 
 
     // ==================== EcritureComptable - DELETE ====================
 
     @Test(expected = NotFoundException.class)
-    public void deleteEcritureComptable() throws NotFoundException{
+    public void deleteEcritureComptableTest() throws NotFoundException{
         dao.deleteEcritureComptable(-6);
         dao.getEcritureComptable(-6);
 
@@ -141,7 +154,7 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
     // ==================== SequenceEcritureComptable - INSERT ====================
 
     @Test
-    public void insertSequenceEcritureComptable(){
+    public void insertSequenceEcritureComptableTest(){
         SequenceEcritureComptable sequence = new SequenceEcritureComptable();
         sequence.setCodeJournal("AC");
         sequence.setAnnee(2018);
@@ -149,18 +162,31 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
 
         dao.insertSequenceEcritureComptable(sequence);
         List<SequenceEcritureComptable> vList = dao.getListSequenceEcritureComptable();
-        Assert.assertEquals(5, vList.size());
+        SequenceEcritureComptable sequenceBis = new SequenceEcritureComptable();
+        for (SequenceEcritureComptable seq :vList){
+            if(seq.getCodeJournal().equals("AC") && seq.getAnnee()==2018){
+                sequenceBis=seq;
+            }
+        }
+
+
+        Assert.assertEquals("AC", sequenceBis.getCodeJournal());
+        Assert.assertTrue(sequenceBis.getAnnee()==2018);
+        Assert.assertTrue(sequenceBis.getDerniereValeur()==5);
+
+        dao.deleteSequenceEcritureComptable(sequence);
 
     }
 
     // ==================== SequenceEcritureComptable - UPDATE ====================
     @Test
-    public void updateSequenceEcritureComptable(){
+    public void updateSequenceEcritureComptableTest(){
         SequenceEcritureComptable sequence = new SequenceEcritureComptable();
         sequence.setCodeJournal("AC");
-        sequence.setAnnee(2018);
+        sequence.setAnnee(2019);
         sequence.setDerniereValeur(5);
 
+        dao.insertSequenceEcritureComptable(sequence);
         sequence.setDerniereValeur(100);
 
         dao.updateSequenceEcritureComptable(sequence);
@@ -169,22 +195,25 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
         SequenceEcritureComptable sequence2 = new SequenceEcritureComptable();
 
         for(SequenceEcritureComptable tempSequence : list){
-            if (tempSequence.getCodeJournal().equals("AC") && tempSequence.getAnnee().equals(2018)){
+            if (tempSequence.getCodeJournal().equals("AC") && tempSequence.getAnnee().equals(2019)){
                 sequence2 = tempSequence;
             }
         }
 
         Assert.assertTrue(sequence2.getDerniereValeur().equals(100));
 
+        dao.deleteSequenceEcritureComptable(sequence);
     }
 
     // ==================== SequenceEcritureComptable - DELETE ====================
     @Test
-    public void deleteSequenceEcritureComptable(){
+    public void deleteSequenceEcritureComptableTest(){
         SequenceEcritureComptable sequence = new SequenceEcritureComptable();
         sequence.setCodeJournal("AC");
-        sequence.setAnnee(2018);
-        sequence.setDerniereValeur(100);
+        sequence.setAnnee(2020);
+        sequence.setDerniereValeur(5);
+
+        dao.insertSequenceEcritureComptable(sequence);
 
         dao.deleteSequenceEcritureComptable(sequence);
 
