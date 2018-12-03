@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class SequenceEcritureComptableRM implements RowMapper<SequenceEcritureComptable> {
     @Override
-    public SequenceEcritureComptable mapRow(ResultSet rs, int num) throws SQLException {
+    public SequenceEcritureComptable mapRow(ResultSet rs, int pRowNum) throws SQLException {
        SequenceEcritureComptable sequence = new SequenceEcritureComptable();
        sequence.setCodeJournal(rs.getString("journal_code"));
        sequence.setAnnee(rs.getInt("annee"));

@@ -44,7 +44,8 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
     @Test
     public void getListSequenceEcritureComptable(){
         List<SequenceEcritureComptable> vList = dao.getListSequenceEcritureComptable();
-        Assert.assertEquals(4, vList.size());
+        System.out.println(vList.size());
+        Assert.assertEquals(5, vList.size());
     }
 
 
@@ -88,8 +89,8 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
 
     @Test
     public void insertEcritureComptable() throws NotFoundException {
-     /*   EcritureComptable ecriture  = new EcritureComptable();
-        ecriture.setId(-6);
+        EcritureComptable ecriture  = new EcritureComptable();
+       // ecriture.setId(-6);
         Date currentDate = new Date();
         Integer currentYear = LocalDateTime.ofInstant(currentDate.toInstant(), ZoneId.systemDefault()).toLocalDate().getYear();
         ecriture.setJournal(new JournalComptable("OD", "Opérations Diverses"));;
@@ -102,8 +103,13 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
         ecriture.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(401),"Facture S110001", null,new BigDecimal(12)));
 
         dao.insertEcritureComptable(ecriture);
+        EcritureComptable ecritureBis = dao.getEcritureComptableByRef("AC-" + currentYear + "/00200");
 
-       // Assert.assertTrue(ecriture.equals(dao.getEcritureComptable(-6)));*/
+        Assert.assertTrue(ecriture.getReference().equals(ecritureBis.getReference()));
+        Assert.assertTrue(ecriture.getLibelle().equals(ecritureBis.getLibelle()));
+
+        dao.deleteEcritureComptable(ecritureBis.getId());
+
     }
 
 

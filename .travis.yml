@@ -18,3 +18,5 @@ before_script:
 
 script:
   - mvn test
+  - mvn test -Ptest-business
+  - mvn test -Ptest-consumer
