@@ -102,5 +102,12 @@ public interface ComptabiliteDao {
      */
     void deleteEcritureComptable(Integer pId);
 
+    /**
+     * Supprime la séquence de l'écriture comptable.
+     *
+     * @param sequence l'id de l'écriture
+     */
+    void deleteSequenceEcritureComptable(SequenceEcritureComptable sequence);
+
 
 }

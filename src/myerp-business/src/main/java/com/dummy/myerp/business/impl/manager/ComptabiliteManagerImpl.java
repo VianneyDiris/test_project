@@ -10,6 +10,7 @@ import javax.validation.ConstraintViolationException;
 import com.dummy.myerp.model.bean.comptabilite.*;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import org.springframework.transaction.TransactionStatus;
 import com.dummy.myerp.business.contrat.manager.ComptabiliteManager;
 import com.dummy.myerp.business.impl.AbstractBusinessManager;
@@ -77,10 +78,11 @@ public class ComptabiliteManagerImpl extends AbstractBusinessManager implements 
 
         List<SequenceEcritureComptable> list = getListSequenceEcritureComptable();
         for(SequenceEcritureComptable tempSequence :list){
-            if(annee.equals(sequence.getAnnee()) && sequence.getCodeJournal().equals(pEcritureComptable.getJournal().getCode())){
+            if(annee.equals(tempSequence.getAnnee()) && tempSequence.getCodeJournal().equals(pEcritureComptable.getJournal().getCode())){
                 derniereValeur = tempSequence.getDerniereValeur();
             }
         }
+
         /*
                 2.  * S'il n'y a aucun enregistrement pour le journal pour l'année concernée :
                         1. Utiliser le numéro 1.
@@ -98,12 +100,6 @@ public class ComptabiliteManagerImpl extends AbstractBusinessManager implements 
         }
         pEcritureComptable.setReference(reference);
 
-        try{
-        this.updateEcritureComptable(pEcritureComptable);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
 
         /*
                 4.  Enregistrer (insert/update) la valeur de la séquence en persitance

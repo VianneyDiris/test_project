@@ -39,6 +39,14 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
         Assert.assertEquals(4, vList.size());
     }
 
+    // ==================== SequenceEcritureComptable - GET ====================
+
+    @Test
+    public void getListSequenceEcritureComptable(){
+        List<SequenceEcritureComptable> vList = dao.getListSequenceEcritureComptable();
+        Assert.assertEquals(4, vList.size());
+    }
+
 
     // ==================== EcritureComptable - GET ====================
 
@@ -122,32 +130,61 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
     }
 
 
-    // ==================== SequenceEcritureComptable - GET ====================
 
-    @Test
-    public void getListSequenceEcritureComptable(){
-        List<SequenceEcritureComptable> vList = dao.getListSequenceEcritureComptable();
-        Assert.assertEquals(4, vList.size());
-    }
 
     // ==================== SequenceEcritureComptable - INSERT ====================
 
     @Test
     public void insertSequenceEcritureComptable(){
-        /*SequenceEcritureComptable sequence = new SequenceEcritureComptable();
+        SequenceEcritureComptable sequence = new SequenceEcritureComptable();
         sequence.setCodeJournal("AC");
         sequence.setAnnee(2018);
         sequence.setDerniereValeur(5);
 
         dao.insertSequenceEcritureComptable(sequence);
         List<SequenceEcritureComptable> vList = dao.getListSequenceEcritureComptable();
-        Assert.assertEquals(5, vList.size());*/
+        Assert.assertEquals(5, vList.size());
 
     }
 
     // ==================== SequenceEcritureComptable - UPDATE ====================
+    @Test
+    public void updateSequenceEcritureComptable(){
+        SequenceEcritureComptable sequence = new SequenceEcritureComptable();
+        sequence.setCodeJournal("AC");
+        sequence.setAnnee(2018);
+        sequence.setDerniereValeur(5);
+
+        sequence.setDerniereValeur(100);
+
+        dao.updateSequenceEcritureComptable(sequence);
+
+        List<SequenceEcritureComptable> list = dao.getListSequenceEcritureComptable();
+        SequenceEcritureComptable sequence2 = new SequenceEcritureComptable();
+
+        for(SequenceEcritureComptable tempSequence : list){
+            if (tempSequence.getCodeJournal().equals("AC") && tempSequence.getAnnee().equals(2018)){
+                sequence2 = tempSequence;
+            }
+        }
+
+        Assert.assertTrue(sequence2.getDerniereValeur().equals(100));
+
+    }
 
     // ==================== SequenceEcritureComptable - DELETE ====================
+    @Test
+    public void deleteSequenceEcritureComptable(){
+        SequenceEcritureComptable sequence = new SequenceEcritureComptable();
+        sequence.setCodeJournal("AC");
+        sequence.setAnnee(2018);
+        sequence.setDerniereValeur(100);
+
+        dao.deleteSequenceEcritureComptable(sequence);
+
+        List<SequenceEcritureComptable> vList = dao.getListSequenceEcritureComptable();
+        Assert.assertEquals(4, vList.size());
+    }
 
 
 }
