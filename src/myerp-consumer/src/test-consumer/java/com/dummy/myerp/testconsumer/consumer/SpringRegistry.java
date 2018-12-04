@@ -1,4 +1,5 @@
 package com.dummy.myerp.testconsumer.consumer;
+import com.dummy.myerp.consumer.ConsumerHelper;
 import com.dummy.myerp.consumer.dao.contrat.DaoProxy;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -76,4 +77,6 @@ public final class SpringRegistry {
     public static DaoProxy getDaoProxy() {
         return (DaoProxy) SpringRegistry.getBean("DaoProxy");
     }
+
+
 }
