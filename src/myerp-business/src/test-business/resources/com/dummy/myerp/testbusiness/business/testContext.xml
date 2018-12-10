@@ -20,7 +20,7 @@
     <bean id="dataSourceMYERP" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="${driverClassName}"/>
         <property name="url" value="${url}"/>
-        <property name="username" value="${user}"/>
+        <property name="username" value="${utilisateur}"/>
         <property name="password" value="${password}"/>
         <property name="defaultAutoCommit" value="${defaultAutoCommit}"/>
         <property name="defaultReadOnly" value="${defaultReadOnly}"/>
