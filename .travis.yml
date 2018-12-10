@@ -17,7 +17,6 @@ before_script:
   - cd ../../src
 
 script:
-  - mvn build
   - mvn test
   - mvn test -Ptest-business
   - mvn test -Ptest-consumer
