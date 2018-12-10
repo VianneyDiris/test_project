@@ -53,6 +53,8 @@ public class EcritureComptableRMTest {
         Mockito.when(resultSet.getString("journal_code")).thenReturn("AC");
 
 
+
+
         // Test
         EcritureComptableRM vEcritureComptableRm = new EcritureComptableRM();
         EcritureComptable vResult = vEcritureComptableRm.mapRow(resultSet,0);
