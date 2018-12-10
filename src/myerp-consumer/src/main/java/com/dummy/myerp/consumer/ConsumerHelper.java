@@ -24,7 +24,5 @@ public abstract class ConsumerHelper {
 
 
     // ==================== Getters/Setters ====================
-    public static DaoProxy getDaoProxy() {
-        return daoProxy;
-    }
+    public static DaoProxy getDaoProxy() { return daoProxy;}
 }

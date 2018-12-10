@@ -1,8 +1,12 @@
 package com.dummy.myerp.consumer.dao.impl.db.dao;
 
+import com.dummy.myerp.consumer.ConsumerHelper;
+import com.dummy.myerp.consumer.dao.contrat.ComptabiliteDao;
+import com.dummy.myerp.consumer.dao.contrat.DaoProxy;
 import com.dummy.myerp.consumer.dao.impl.db.rowmapper.comptabilite.LigneEcritureComptableRM;
 import com.dummy.myerp.model.bean.comptabilite.LigneEcritureComptable;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -18,6 +22,18 @@ public class LigneEcritureComptableRMTest {
     @Mock
     private ResultSet resultSet;
 
+    @Mock
+    private static DaoProxy daoProxy;
+
+    @Mock
+    private static ComptabiliteDao comptabiliteDao;
+
+    @Before
+    public void setUp(){
+        ConsumerHelper.configure(daoProxy);
+        Mockito.when(daoProxy.getComptabiliteDao()).thenReturn(comptabiliteDao);
+    }
+
     /**
      * test de LigneEcritureComptableRM mapRow(ResultSet pRS, int pRowNum) throws SQLException
      *
@@ -26,7 +42,7 @@ public class LigneEcritureComptableRMTest {
     @Test
     public void mapRow() throws SQLException {
         // Création du resultSet en paramètre
-       /* Mockito.when(resultSet.getBigDecimal("credit")).thenReturn(BigDecimal.valueOf(15));
+        Mockito.when(resultSet.getBigDecimal("credit")).thenReturn(BigDecimal.valueOf(15));
         Mockito.when(resultSet.getBigDecimal("debit")).thenReturn(BigDecimal.valueOf(20));
         Mockito.when(resultSet.getString("libelle")).thenReturn("libelle");
 
@@ -39,6 +55,6 @@ public class LigneEcritureComptableRMTest {
 
         Assert.assertTrue("Test EcritureComptableRM.mapRow() : credit faux", vResult.getCredit().compareTo(BigDecimal.valueOf(15))==0);
         Assert.assertTrue("Test EcritureComptableRM.mapRow() : debit faux", vResult.getDebit().compareTo(BigDecimal.valueOf(20))==0);
-        Assert.assertTrue("Test EcritureComptableRM.mapRow() : libelle faux", vResult.getLibelle().equals("Libelle"));*/
+        Assert.assertTrue("Test EcritureComptableRM.mapRow() : libelle faux", vResult.getLibelle().equals("libelle"));
     }
 }

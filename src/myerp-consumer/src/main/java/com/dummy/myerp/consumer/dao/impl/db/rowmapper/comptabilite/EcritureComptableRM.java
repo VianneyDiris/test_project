@@ -24,6 +24,7 @@ public class EcritureComptableRM implements RowMapper<EcritureComptable> {
         vBean.setId(pRS.getInt("id"));
         vBean.setJournal(journalComptableDaoCache.getByCode(pRS.getString("journal_code")));
         vBean.setReference(pRS.getString("reference"));
+        System.out.println(pRS.getDate("date"));
         vBean.setDate(pRS.getDate("date"));
         vBean.setLibelle(pRS.getString("libelle"));
 
