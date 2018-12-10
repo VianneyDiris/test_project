@@ -20,7 +20,7 @@ script:
   - mvn test -Ptest-consumer,test-business
   - cd ../docker/dev
   - docker-compose stop
-  - docker-compose rm -v
+  - docker-compose rm -f
   - docker-compose up -d
   - docker ps -a
 
