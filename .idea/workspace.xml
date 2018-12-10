@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd21efbd-d769-44d2-987f-57de8faf90fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/EcritureComptableRMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/EcritureComptableRMTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/LigneEcritureComptableRMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/LigneEcritureComptableRMTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/db-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/db-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/testContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/testContext.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/myerp-technical/target/" />
     <ignored path="$PROJECT_DIR$/src/myerp-consumer/target/" />
@@ -49,8 +49,8 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="java" value="63" />
-          <entry key="properties" value="10" />
-          <entry key="xml" value="29" />
+          <entry key="properties" value="11" />
+          <entry key="xml" value="30" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
@@ -58,8 +58,8 @@
         <counts>
           <entry key="JAVA" value="63" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="10" />
-          <entry key="XML" value="29" />
+          <entry key="Properties" value="11" />
+          <entry key="XML" value="30" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -67,8 +67,8 @@
         <counts>
           <entry key="gitignore" value="12" />
           <entry key="java" value="2655" />
-          <entry key="properties" value="26" />
-          <entry key="xml" value="235" />
+          <entry key="properties" value="37" />
+          <entry key="xml" value="247" />
           <entry key="yml" value="90" />
         </counts>
       </usages-collector>
@@ -76,9 +76,9 @@
         <counts>
           <entry key="JAVA" value="2654" />
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Properties" value="26" />
+          <entry key="Properties" value="37" />
           <entry key="SQL" value="1" />
-          <entry key="XML" value="235" />
+          <entry key="XML" value="247" />
           <entry key="YAML" value="90" />
         </counts>
       </usages-collector>
@@ -98,13 +98,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/EcritureComptableRMTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="688">
               <caret line="44" column="120" selection-start-line="44" selection-start-column="120" selection-end-line="44" selection-end-column="120" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/db-test.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/testContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+              <folding>
+                <element signature="e#1297#1313#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -182,8 +203,6 @@
         <option value="$PROJECT_DIR$/src/myerp-business/src/test-business/resources/com/dummy/myerp/testbusiness/business/testContext.xml" />
         <option value="$PROJECT_DIR$/src/myerp-business/src/test-business/java/com/dummy/myerp/testbusiness/business/SpringRegistry.java" />
         <option value="$PROJECT_DIR$/src/myerp-business/src/test-business/resources/com/dummy/myerp/testbusiness/business/db-test.properties" />
-        <option value="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/db-test.properties" />
-        <option value="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/testContext.xml" />
         <option value="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/myerp-business/src/test/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImplTest.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/main/resources/com/dummy/myerp/consumer/sqlContext.xml" />
@@ -203,6 +222,8 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/LigneEcritureComptableRMTest.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/EcritureComptableRMTest.java" />
+        <option value="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/db-test.properties" />
+        <option value="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/testContext.xml" />
       </list>
     </option>
   </component>
@@ -322,7 +343,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544460908309" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544461146323" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
@@ -456,7 +477,7 @@
       <workItem from="1543695599058" duration="34931000" />
       <workItem from="1544108578744" duration="1240000" />
       <workItem from="1544448157318" duration="602000" />
-      <workItem from="1544455601901" duration="3707000" />
+      <workItem from="1544455601901" duration="3945000" />
     </task>
     <servers />
   </component>
@@ -493,13 +514,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64640000" />
+    <option name="totallyTimeSpent" value="64878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4982079" visible="true" weight="0.26865673" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4982079" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" sideWeight="0.50179213" side_tool="true" weight="0.26332623" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -508,7 +529,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15696466" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15696466" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3960499" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -682,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/db-test.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/resources/com/dummy/myerp/consumer/sqlContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -791,13 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/testContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/EcritureComptableRM.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -864,6 +871,23 @@
           <caret line="44" column="120" selection-start-line="44" selection-start-column="120" selection-end-line="44" selection-end-column="120" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/db-test.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/testContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+          <folding>
+            <element signature="e#1297#1313#0" expanded="true" />
           </folding>
         </state>
       </provider>
