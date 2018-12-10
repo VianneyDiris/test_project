@@ -23,9 +23,9 @@ script:
   - docker-compose rm -f
   - docker-compose up -d
   - docker ps -a
+  - cd ../src
 
 after_success:
- - - cd ../../src
  - mvn --file pom.xml cobertura:cobertura -P test-consumer,test-business
  - bash <(curl -s https://codecov.io/bash)
 
