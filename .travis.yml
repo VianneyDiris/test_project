@@ -23,6 +23,7 @@ script:
   - docker-compose rm -f
   - docker-compose up -d
   - docker ps -a
+  - cd ..
   - dir
 
 after_success:
