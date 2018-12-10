@@ -18,8 +18,14 @@ before_script:
 
 script:
   - mvn test -Ptest-consumer,test-business
+  - cd docker/dev
+  - docker-compose stop
+  - docker-compose rm -v
+  - docker-compose up -d
+  - docker ps -a
 
 after_success:
+ - - cd ../../src
  - mvn --file pom.xml cobertura:cobertura -P test-consumer,test-business
  - bash <(curl -s https://codecov.io/bash)
 
