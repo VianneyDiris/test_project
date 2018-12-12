@@ -11,6 +11,8 @@ import org.junit.jupiter.api.Assertions;
 
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -103,13 +105,80 @@ public class ComptabiliteManagerImplTest extends BusinessTestCase {
         vEcritureComptable.setId(-1);
         vEcritureComptable.setJournal(new JournalComptable("AC", "Achat"));
         try{
-        vEcritureComptable.setDate(new SimpleDateFormat("yyyy/MM/dd").parse("2018/12/31"));}
+        vEcritureComptable.setDate(new SimpleDateFormat("yyyy/MM/dd").parse("2022/12/31"));}
         catch(Exception e){
             e.printStackTrace();
         }
         manager.addReference(vEcritureComptable);
 
         Assert.assertTrue(vEcritureComptable.getReference()!=null);
+
+        SequenceEcritureComptable sequence = new SequenceEcritureComptable();
+        sequence.setAnnee(2022);
+        sequence.setCodeJournal("AC");
+
+        manager.deleteSequenceEcritureComptable(sequence);
+
     }
+
+    @Test
+    public void getListCompteComptableTest(){
+        List<CompteComptable> vList = manager.getListCompteComptable();
+        Assert.assertTrue(vList.size()>1);
+    }
+
+    @Test
+    public void getListJournalComptable(){
+        List<JournalComptable> vList = manager.getListJournalComptable();
+        Assert.assertTrue(vList.size()>1);
+    }
+
+    @Test
+    public void getListSequenceEcritureComptableTest(){
+        List<SequenceEcritureComptable> vList = manager.getListSequenceEcritureComptable();
+        Assert.assertTrue(vList.size()>1);
+    }
+
+    @Test
+    public void getListEcritureComptableTest() {
+        List<EcritureComptable> vList = manager.getListEcritureComptable();
+        Assert.assertTrue(vList.size()>1);
+    }
+
+    @Test
+    public void insertEcritureComptableTest() throws FunctionalException {
+        EcritureComptable ecriture  = new EcritureComptable();
+        Date currentDate = new Date();
+        Integer currentYear = LocalDateTime.ofInstant(currentDate.toInstant(), ZoneId.systemDefault()).toLocalDate().getYear();
+        ecriture.setJournal(new JournalComptable("AC", "Opérations Diverses"));
+        ecriture.setReference("AC-" + currentYear + "/00201");
+        ecriture.setDate(currentDate);
+        ecriture.setLibelle("Sandwichs");
+
+        ecriture.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(606),"Club saumon", new BigDecimal(10),null));
+        ecriture.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(4456),"TVA 20%", new BigDecimal(2),null));
+        ecriture.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(401),"Facture S110001", null,new BigDecimal(12)));
+
+        manager.insertEcritureComptable(ecriture);
+
+        List<EcritureComptable> vList = manager.getListEcritureComptable();
+        EcritureComptable ecritureBis = new EcritureComptable();
+
+        for(EcritureComptable tempEcriture : vList){
+            if(tempEcriture.getReference().equals(ecriture.getReference()) && tempEcriture.getLibelle().equals("Sandwichs")){
+                ecritureBis = tempEcriture;
+            }
+        }
+
+
+
+        Assert.assertTrue(ecriture.getReference().equals(ecritureBis.getReference()));
+        Assert.assertTrue(ecriture.getLibelle().equals(ecritureBis.getLibelle()));
+
+        manager.deleteEcritureComptable(ecritureBis.getId());
+
+    }
+
+
 
 }

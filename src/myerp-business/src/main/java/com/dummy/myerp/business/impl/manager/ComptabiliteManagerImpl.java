@@ -268,6 +268,19 @@ public class ComptabiliteManagerImpl extends AbstractBusinessManager implements 
         }
     }
 
+    @Override
+    public void deleteSequenceEcritureComptable(SequenceEcritureComptable sequence) {
+        TransactionStatus vTS = getTransactionManager().beginTransactionMyERP();
+        try {
+            getDaoProxy().getComptabiliteDao().deleteSequenceEcritureComptable(sequence);
+            getTransactionManager().commitMyERP(vTS);
+            vTS = null;
+        } finally {
+            getTransactionManager().rollbackMyERP(vTS);
+        }
+
+    }
+
     public void RG_2_Equilibree(EcritureComptable ecriture)throws FunctionalException{
         if (!ecriture.isEquilibree()) {
             throw new FunctionalException("L'écriture comptable n'est pas équilibrée.");

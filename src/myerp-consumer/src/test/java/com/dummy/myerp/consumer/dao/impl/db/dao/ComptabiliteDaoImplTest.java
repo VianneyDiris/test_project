@@ -219,6 +219,8 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
 
         List<SequenceEcritureComptable> vList = dao.getListSequenceEcritureComptable();
         Assert.assertEquals(4, vList.size());
+
+
     }
 
 

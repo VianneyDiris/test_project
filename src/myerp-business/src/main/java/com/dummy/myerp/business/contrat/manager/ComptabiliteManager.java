@@ -104,4 +104,6 @@ public interface ComptabiliteManager {
      * @param sequence -
      */
     void insertSequenceEcritureComptable(SequenceEcritureComptable sequence);
+
+    void deleteSequenceEcritureComptable(SequenceEcritureComptable sequence);
 }

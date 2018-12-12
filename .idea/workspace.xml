@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="dd21efbd-d769-44d2-987f-57de8faf90fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/contrat/manager/ComptabiliteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/contrat/manager/ComptabiliteManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-business/src/test/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/src/test/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/EcritureComptableRMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/EcritureComptableRMTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/myerp-technical/target/" />
     <ignored path="$PROJECT_DIR$/src/myerp-consumer/target/" />
@@ -18,14 +21,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/myerp$business_in_myerp_business.ic" NAME="business in myerp-business Coverage Results" MODIFIED="1544469713592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/myerp$consumer_in_myerp_consumer.ic" NAME="consumer in myerp-consumer Coverage Results" MODIFIED="1544469750293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/myerp$All_Features_in__src.ic" NAME="All Features in: src Coverage Results" MODIFIED="1544490612528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cucumber.api.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/myerp$business_in_myerp_business.ic" NAME="business in myerp-business Coverage Results" MODIFIED="1544490746404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/myerp$com_dummy_myerp_model_bean_comptabilite_in_myerp_model.ic" NAME="com.dummy.myerp.model.bean.comptabilite in myerp-model Coverage Results" MODIFIED="1544469845782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.dummy.myerp.model.bean.comptabilite.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/myerp$consumer_in_myerp_consumer.ic" NAME="consumer in myerp-consumer Coverage Results" MODIFIED="1544490784340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/myerp$ComptabiliteManagerImplTest.ic" NAME="ComptabiliteManagerImplTest Coverage Results" MODIFIED="1544621891310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dummy.myerp.business.impl.manager.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/myerp$dao_in_myerp_consumer.ic" NAME="dao in myerp-consumer Coverage Results" MODIFIED="1544490812267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="271" />
+    <option name="myElementSize" value="346" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -59,7 +69,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="90" />
+          <entry key="java" value="100" />
           <entry key="properties" value="13" />
           <entry key="xml" value="34" />
           <entry key="yml" value="5" />
@@ -67,7 +77,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="90" />
+          <entry key="JAVA" value="100" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="13" />
           <entry key="XML" value="34" />
@@ -77,7 +87,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="12" />
-          <entry key="java" value="3165" />
+          <entry key="java" value="3553" />
           <entry key="properties" value="47" />
           <entry key="xml" value="262" />
           <entry key="yml" value="206" />
@@ -85,7 +95,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3164" />
+          <entry key="JAVA" value="3552" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="Properties" value="47" />
           <entry key="SQL" value="1" />
@@ -98,40 +108,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2876">
-              <caret line="197" column="94" selection-start-line="197" selection-start-column="94" selection-end-line="197" selection-end-column="94" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/db/helper/ResultSetHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-176">
-              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+            <state relative-caret-position="250">
+              <caret line="319" selection-start-line="319" selection-end-line="319" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/myerp-business/src/test/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="285" column="21" selection-start-line="285" selection-start-column="21" selection-end-line="285" selection-end-column="21" />
+            <state relative-caret-position="118">
+              <caret line="153" column="59" selection-start-line="153" selection-start-column="59" selection-end-line="153" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -169,8 +158,6 @@
         <option value="$PROJECT_DIR$/src/myerp-business/src/test-business/resources/db-test.properties" />
         <option value="$PROJECT_DIR$/src/myerp-business/src/test-business/resources/testContext.xml" />
         <option value="$PROJECT_DIR$/src/myerp-business/src/test-business/java/com/dummy/myerp/testbusiness/business/SpringRegistry.java" />
-        <option value="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java" />
-        <option value="$PROJECT_DIR$/src/myerp-business/src/test/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImplTest.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/main/resources/com/dummy/myerp/consumer/sqlContext.xml" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/contrat/ComptabiliteDao.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/RowMapperTest.java" />
@@ -183,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/cache/JournalComptableDaoCache.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/testconsumer/consumer/SpringRegistry.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/main/resources/com/dummy/myerp/consumer/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/db-test.properties" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/resources/com/dummy/myerp/testconsumer/consumer/testContext.xml" />
         <option value="$PROJECT_DIR$/src/myerp-business/src/test-business/resources/com/dummy/myerp/testbusiness/business/db-test.properties" />
@@ -191,9 +177,13 @@
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/ConsumerHelper.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/EcritureComptableRM.java" />
         <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/LigneEcritureComptableRMTest.java" />
-        <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/EcritureComptableRMTest.java" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/pom.xml" />
+        <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/EcritureComptableRMTest.java" />
+        <option value="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/contrat/manager/ComptabiliteManager.java" />
+        <option value="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/myerp-business/src/test/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImplTest.java" />
       </list>
     </option>
   </component>
@@ -242,6 +232,181 @@
               <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="contrat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="contrat" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test-business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test-business" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myerp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myerp-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -254,7 +419,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544490004537" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544621889715" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
@@ -284,61 +449,65 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LigneEcritureComptableRMTest">
-    <configuration name="ComptabiliteDaoImplTest.getListEcritureComptableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myerp-consumer" />
+  <component name="RunManager" selected="JUnit.ComptabiliteManagerImplTest">
+    <configuration name="ComptabiliteManagerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myerp-business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.consumer.dao.impl.db.dao.*" />
+          <option name="PATTERN" value="com.dummy.myerp.business.impl.manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
-      <option name="METHOD_NAME" value="getListEcritureComptableTest" />
+      <option name="PACKAGE_NAME" value="com.dummy.myerp.business.impl.manager" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.business.impl.manager.ComptabiliteManagerImplTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComptabiliteManagerImplTest.addReference" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myerp-business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dummy.myerp.business.impl.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dummy.myerp.business.impl.manager" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.business.impl.manager.ComptabiliteManagerImplTest" />
+      <option name="METHOD_NAME" value="addReference" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EcritureComptableRMTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myerp-consumer" />
+    <configuration name="ComptabiliteManagerImplTest.checkEcritureComptableUnitRG5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myerp-business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.consumer.dao.impl.db.dao.*" />
+          <option name="PATTERN" value="com.dummy.myerp.business.impl.manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.EcritureComptableRMTest" />
+      <option name="PACKAGE_NAME" value="com.dummy.myerp.business.impl.manager" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.business.impl.manager.ComptabiliteManagerImplTest" />
+      <option name="METHOD_NAME" value="checkEcritureComptableUnitRG5" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LigneEcritureComptableRMTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myerp-consumer" />
+    <configuration name="ComptabiliteManagerImplTest.insertEcritureComptableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myerp-business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.consumer.dao.impl.db.dao.*" />
+          <option name="PATTERN" value="com.dummy.myerp.business.impl.manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.LigneEcritureComptableRMTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.dummy.myerp.model.bean.comptabilite in myerp-model" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myerp-model" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.model.bean.comptabilite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.model.bean.comptabilite" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="com.dummy.myerp.business.impl.manager" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.business.impl.manager.ComptabiliteManagerImplTest" />
+      <option name="METHOD_NAME" value="insertEcritureComptableTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -353,17 +522,17 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.consumer in myerp-consumer" />
-      <item itemvalue="JUnit.com.dummy.myerp.model.bean.comptabilite in myerp-model" />
-      <item itemvalue="JUnit.LigneEcritureComptableRMTest" />
-      <item itemvalue="JUnit.ComptabiliteDaoImplTest.getListEcritureComptableTest" />
-      <item itemvalue="JUnit.EcritureComptableRMTest" />
+      <item itemvalue="JUnit.ComptabiliteManagerImplTest.addReference" />
+      <item itemvalue="JUnit.ComptabiliteManagerImplTest" />
+      <item itemvalue="JUnit.ComptabiliteManagerImplTest.insertEcritureComptableTest" />
+      <item itemvalue="JUnit.ComptabiliteManagerImplTest.checkEcritureComptableUnitRG5" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LigneEcritureComptableRMTest" />
-        <item itemvalue="JUnit.EcritureComptableRMTest" />
-        <item itemvalue="JUnit.ComptabiliteDaoImplTest.getListEcritureComptableTest" />
-        <item itemvalue="JUnit.com.dummy.myerp.model.bean.comptabilite in myerp-model" />
+        <item itemvalue="JUnit.ComptabiliteManagerImplTest" />
+        <item itemvalue="JUnit.ComptabiliteManagerImplTest.insertEcritureComptableTest" />
+        <item itemvalue="JUnit.ComptabiliteManagerImplTest.checkEcritureComptableUnitRG5" />
+        <item itemvalue="JUnit.ComptabiliteManagerImplTest.addReference" />
         <item itemvalue="JUnit.consumer in myerp-consumer" />
       </list>
     </recent_temporary>
@@ -388,50 +557,50 @@
       <workItem from="1543695599058" duration="34931000" />
       <workItem from="1544108578744" duration="1240000" />
       <workItem from="1544448157318" duration="602000" />
-      <workItem from="1544455601901" duration="19673000" />
+      <workItem from="1544455601901" duration="23291000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="business_in_myerp-business - 2018.12.10 at 20h 21m 41s.xml">
-      <configuration name="business in myerp-business" configurationId="JUnit" />
+    <history-entry file="ComptabiliteManagerImplTest - 2018.12.12 at 14h 20m 10s.xml">
+      <configuration name="ComptabiliteManagerImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="business_in_myerp-business - 2018.12.10 at 20h 22m 08s.xml">
-      <configuration name="business in myerp-business" configurationId="JUnit" />
+    <history-entry file="ComptabiliteManagerImplTest_insertEcritureComptableTest - 2018.12.12 at 14h 27m 25s.xml">
+      <configuration name="ComptabiliteManagerImplTest.insertEcritureComptableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="consumer_in_myerp-consumer - 2018.12.10 at 20h 22m 41s.xml">
-      <configuration name="consumer in myerp-consumer" configurationId="JUnit" />
+    <history-entry file="ComptabiliteManagerImplTest - 2018.12.12 at 14h 28m 14s.xml">
+      <configuration name="ComptabiliteManagerImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_dummy_myerp_model_bean_comptabilite_in_myerp-model - 2018.12.10 at 20h 24m 12s.xml">
-      <configuration name="com.dummy.myerp.model.bean.comptabilite in myerp-model" configurationId="JUnit" />
+    <history-entry file="ComptabiliteManagerImplTest_insertEcritureComptableTest - 2018.12.12 at 14h 29m 10s.xml">
+      <configuration name="ComptabiliteManagerImplTest.insertEcritureComptableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LigneEcritureComptableRMTest - 2018.12.10 at 21h 42m 06s.xml">
-      <configuration name="LigneEcritureComptableRMTest" configurationId="JUnit" />
+    <history-entry file="ComptabiliteManagerImplTest_checkEcritureComptableUnitRG5 - 2018.12.12 at 14h 34m 17s.xml">
+      <configuration name="ComptabiliteManagerImplTest.checkEcritureComptableUnitRG5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ComptabiliteDaoImplTest_getListEcritureComptableTest - 2018.12.10 at 21h 46m 28s.xml">
-      <configuration name="ComptabiliteDaoImplTest.getListEcritureComptableTest" configurationId="JUnit" />
+    <history-entry file="ComptabiliteManagerImplTest_checkEcritureComptableUnitRG5 - 2018.12.12 at 14h 34m 47s.xml">
+      <configuration name="ComptabiliteManagerImplTest.checkEcritureComptableUnitRG5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EcritureComptableRMTest - 2018.12.10 at 21h 50m 18s.xml">
-      <configuration name="EcritureComptableRMTest" configurationId="JUnit" />
+    <history-entry file="ComptabiliteManagerImplTest_insertEcritureComptableTest - 2018.12.12 at 14h 35m 16s.xml">
+      <configuration name="ComptabiliteManagerImplTest.insertEcritureComptableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EcritureComptableRMTest - 2018.12.10 at 22h 25m 19s.xml">
-      <configuration name="EcritureComptableRMTest" configurationId="JUnit" />
+    <history-entry file="ComptabiliteManagerImplTest_insertEcritureComptableTest - 2018.12.12 at 14h 35m 32s.xml">
+      <configuration name="ComptabiliteManagerImplTest.insertEcritureComptableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EcritureComptableRMTest - 2018.12.10 at 23h 03m 01s.xml">
-      <configuration name="EcritureComptableRMTest" configurationId="JUnit" />
+    <history-entry file="ComptabiliteManagerImplTest_insertEcritureComptableTest - 2018.12.12 at 14h 36m 07s.xml">
+      <configuration name="ComptabiliteManagerImplTest.insertEcritureComptableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LigneEcritureComptableRMTest - 2018.12.10 at 23h 04m 06s.xml">
-      <configuration name="LigneEcritureComptableRMTest" configurationId="JUnit" />
+    <history-entry file="ComptabiliteManagerImplTest_insertEcritureComptableTest - 2018.12.12 at 14h 37m 30s.xml">
+      <configuration name="ComptabiliteManagerImplTest.insertEcritureComptableTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80606000" />
+    <option name="totallyTimeSpent" value="84224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4982079" visible="true" weight="0.24520256" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4982079" visible="true" weight="0.24520256" />
       <window_info id="Structure" order="1" sideWeight="0.50179213" side_tool="true" weight="0.26332623" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -440,7 +609,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16320166" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33160084" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3960499" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -448,9 +617,9 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23076923" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.23076923" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32952183" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.15488565" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -528,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/testconsumer/consumer/ConsumerTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/db/DataSourcesEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -549,13 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/testconsumer/consumer/TestInitSpring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -577,20 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="280" column="42" selection-start-line="280" selection-start-column="42" selection-end-line="280" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-business/src/test/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
@@ -621,13 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/testconsumer/consumer/SpringRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>
@@ -688,16 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/CompteComptableRMTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -770,30 +894,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/EcritureComptableRMTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2876">
           <caret line="197" column="94" selection-start-line="197" selection-start-column="94" selection-end-line="197" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="219" column="3" selection-start-line="219" selection-start-column="3" selection-end-line="219" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -830,8 +934,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="285" column="21" selection-start-line="285" selection-start-column="21" selection-end-line="285" selection-end-column="21" />
+        <state relative-caret-position="208">
+          <caret line="300" column="34" selection-start-line="300" selection-start-column="34" selection-end-line="300" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/EcritureComptableRMTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/testconsumer/consumer/ConsumerTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/testconsumer/consumer/SpringRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1551">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/testconsumer/consumer/TestInitSpring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/contrat/manager/ComptabiliteManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="105" column="77" lean-forward="true" selection-start-line="105" selection-start-column="77" selection-end-line="105" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/CompteComptableRMTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-consumer/src/test/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="103" column="58" lean-forward="true" selection-start-line="103" selection-start-column="58" selection-end-line="103" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="319" selection-start-line="319" selection-end-line="319" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myerp-business/src/test/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="153" column="59" selection-start-line="153" selection-start-column="59" selection-end-line="153" selection-end-column="59" />
         </state>
       </provider>
     </entry>
