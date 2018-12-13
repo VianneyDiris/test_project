@@ -1,5 +1,8 @@
 # MyERP
 
+[![Build Status](https://travis-ci.org/VianneyDiris/test_project.svg?branch=master)](https://travis-ci.org/VianneyDiris/test_project)
+[![Code Coverage](https://codecov.io/gh/VianneyDiris/test_project/coverage.svg)](https://codecov.io/gh/VianneyDiris/test_project)
+
 ## Organisation du répertoire
 
 *   `doc` : documentation
