@@ -28,4 +28,14 @@ public class CompteComptableTest {
             Assert.assertEquals(CompteComptable.getByNumero(compteList, i)
                     .getLibelle(), "Libelle " + i);
     }
+
+    @Test
+    public void toStringTest(){
+        CompteComptable compte = new CompteComptable();
+        compte.setLibelle("libelle");
+        compte.setNumero(20);
+        Assert.assertEquals(compte.toString(),"CompteComptable{numero=20, libelle='libelle'}");
+    }
+
+
 }
